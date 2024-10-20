@@ -53,8 +53,11 @@ class parking_fee_system:
 # 使用示例
 system = parking_fee_system()
 print(system.car_in("ABC-1234"))  # 車輛 ABC-1234 已進入停車場
+
 import time
 
 time.sleep(2)  # 模擬停車2秒
+
 print(system.pay("ABC-1234"))  # 車輛 ABC-1234 應繳費用：0 元
+
 print(system.car_out("ABC-1234"))
